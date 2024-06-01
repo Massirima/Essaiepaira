@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-verif.css">
+</head>
+
+<body>
+    <img src="images/preview_720p.mp4.webp" alt="">
+    <div class="container--0-">
+        <div class="title">Pairai.ci</div>
+        <div class="title-advertising">
+            Ce site Web contient du matériel avec des restrictions d'âge, y compris de
+            la nudité et des représentations explicites de l'activité sexuelle.<br />
+            En vous inscrivant, vous affirmez que vous avez au moins 18 ans ou
+            l'âge de la majorité dans la juridiction à partir de laquelle vous accédez
+            <br />au site Web et que vous consentez à visionner du contenu sexuellement
+            explicite.
+        </div>
+        <form action="" id="sub">
+            <button id="btn-yes" value="yes" type="submit">Oui, j’ai plus de 18 ans</button><br>
+            <button id="btn-no" value="no" type="submit">Non, je n’ai pas plus de 18 ans</button>
+        </form>
+
+    </div>
+</body>
+<script>
+
+    let buttonYes = document.getElementById("btn-yes")
+    let buttonNo = document.getElementById("btn-no")
+    let form = document.getElementById("sub")
+
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        const clickedButton = e.submitter
+
+        if (clickedButton == buttonYes) {
+            window.location.href = "Index.html"
+        }
+        else if (clickedButton == buttonYes) {
+            alert("Vous n'avez pas l'âge requis ! Dégagez d'ici ")
+        }
+    })
+
+
+
+</script>
+
+</html>

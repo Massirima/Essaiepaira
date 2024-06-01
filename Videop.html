@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-verif.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        section {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        section.content {
+
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* Assure une répartition égale de l'espace autour des éléments */
+            
+        }
+
+        .video-container {
+            flex: 10 1 10%;
+
+            /* Permet à chaque vidéo de prendre environ 16% de l'espace, avec un peu de marge */
+            margin: 50px;
+            width: 250px;
+            height: 250px;
+            /* Augmente la marge autour de chaque vidéo */
+            box-sizing: border-box;
+        }
+
+        video {
+            width: 120%;
+            /* Assure que la vidéo remplit le conteneur */
+            height: auto;
+            /* Maintient le ratio aspect de la vidéo */
+        }
+
+        #video-player-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            /* Utilise toute la hauteur de la fenêtre */
+            background-color: #c52f2f;
+        }
+
+        .Vidpl {
+            flex-direction: column;
+            margin-top: 170px;
+            height: 100%;
+            margin-left: 250px;
+        }
+
+        .content {
+            flex-direction: column;
+            height: 100%;
+            margin-left: 150px;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        video {
+            border-radius: 5px;
+            width: auto;
+            /* Assure que la vidéo remplit le conteneur */
+            height: auto;
+            /* Maintient le ratio aspect de la vidéo */
+        }
+
+        .video-container:hover {
+            transform: scale(1.05);
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        #video-player-section {
+            flex-direction: column;
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        #video-player {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #video-description {
+            color: white;
+            flex: 1;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        #recommended-videos {
+            display: flex;
+            flex: 1; 
+        }
+
+        #recommended-videos h2 {
+            margin-bottom: 20px;
+
+        }
+
+        .video-item {
+            background-color: #fff;
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+        }
+
+        .video-item img {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="main">
+    <header>
+        <div class="sidebar">
+            <div class="logo-container">
+                <a href="./Index.html"><img src="images/Sans-titre--blanc.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Filles Noire</a></li>
+                    <li><a href="">Hardcore</a></li>
+                    <li><a href="">Doggystyle</a></li>
+                    <li><a href="">Gros culs</a></li>
+                    <li><a href="">Africaine</a></li>
+                    <li><a href="">Ivoiriennes bien chaude</a></li>
+                    <li><a href="">Pussyfucking</a></li>
+                    <li><a href="">Masturbation</a></li>
+                    <li><a href="">Orgasmes</a></li>
+                    <li><a href="">Missionnaire</a></li>
+                    <li><a href="">chatte noire</a></li>
+                    <li><a href="">U18</a></li>
+                    <li><a href="">Sex</a></li>
+                    <li><a href="">Vieilles blanches</a></li>
+                    <li><a href="">Famille</a></li>
+                    <li><a href="">BBW</a></li>
+                    <li><a href="">Anal</a></li>
+                    <li><a href="">Bonne pipe</a></li>
+                    <li><a href="">Gros seins et petits seins</a></li>
+                    <li><a href="">A voir absolument</a></li>
+                    <li><a href="">Collegienne</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="list-navig">
+            <ul>
+                <li><a href="">A L'IVOIRIENNE</a></li>
+                <li><a href="">NOS MEILLEURES VIDEOS</a></li>
+                <li><a href="">IMAGES/GIFS</a></li>
+                <li>
+                    <a href="">BIZI</a>
+                    <ul class="submenu">
+                        <li><a href="">Jedolo</a></li>
+                        <li><a href="">Locanto</a></li>
+                    </ul>
+                </li>
+                <li><a href="">PREMIUM</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="bar-navig">
+        <input type="search" name="search" id="search-bar" placeholder="Rechercher...">
+        <button type="submit" class="btn">Connexion</button>
+        <button type="submit" class="btn">Inscrivez-vous</button>
+    </div>
+    <section id="video-player-section">
+        <section class="Vidpl">
+            <section class="content">
+                <div class="mainnn">
+                    <section id="video-player-section">
+                        <video id="video-player" controls>
+                            <source src="video1.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                        <div id="video-description">
+                            <h2>Video Title</h2>
+                            <p>Voici la description de la vidéo. Elle contient des informations sur le contenu de la
+                                vidéo et autres détails pertinents.</p>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <aside id="recommended-videos">
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video3.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 3</h3>
+                                </a>
+                            </div>
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video1.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 1</h3>
+                                </a>
+                            </div>
+
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video2.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 2</h3>
+                                </a>
+                            </div>
+                    </section>
+                    <section class="content">
+                        <aside id="recommended-videos">
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video3.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 3</h3>
+                                </a>
+                            </div>
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video1.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 1</h3>
+                                </a>
+                            </div>
+
+                            <div class="video-container">
+                                <a href="./Videop.html">
+                                    <video controls>
+                                        <source src="chemin/vers/la/video2.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la balise vidéo.
+                                    </video>
+                                    <h3>Titre de la vidéo 2</h3>
+                                </a>
+                            </div>
+                    </section>
+                    <!-- Ajouter plus de vidéos recommandées selon vos besoins -->
+                    </aside>
+                </div>
+            </section>
+        </section>
+    </section>
+    </section>
+    <script>
+        // scripts.js
+        function playVideo(videoFile) {
+            const videoPlayer = document.getElementById('video-player');
+            const videoSource = videoPlayer.querySelector('source');
+            videoSource.src = videoFile;
+            videoPlayer.load();
+            videoPlayer.play();
+        }
+    </script>
+    </main>
+</body>
+
+</html>
